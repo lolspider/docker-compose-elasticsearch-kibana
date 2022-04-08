@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  elasticsearch:
+  elasticsearch1:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
     container_name: elasticsearch1
     environment:
@@ -30,7 +30,7 @@ services:
           memory: 256M
         reservations:
           cpus: '1'
-          memory: 1G
+          memory: 256M
       restart_policy:
         condition: on-failure
         delay: 5s
